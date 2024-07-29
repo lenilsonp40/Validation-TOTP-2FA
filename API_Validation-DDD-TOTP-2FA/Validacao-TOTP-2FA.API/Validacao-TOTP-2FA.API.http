@@ -1,0 +1,6 @@
+@Validacao_TOTP_2FA.API_HostAddress = http://localhost:5053
+
+GET {{Validacao_TOTP_2FA.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

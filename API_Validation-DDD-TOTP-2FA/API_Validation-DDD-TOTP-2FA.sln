@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validacao-TOTP-2FA.Core", "Manager.Core\Validacao-TOTP-2FA.Core.csproj", "{3512662C-D166-4116-B6C9-139CEB5D4244}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validacao-TOTP-2FA.Domain", "Validacao-TOTP-2FA.Domain\Validacao-TOTP-2FA.Domain.csproj", "{7E15B5DB-CF29-43A2-B4C3-DF60DEEA64AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validacao-TOTP-2FA.Infra", "Validacao-TOTP-2FA.Infra\Validacao-TOTP-2FA.Infra.csproj", "{A3AC532D-1A92-4235-A176-63C2FF278583}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validacao-TOTP-2FA.Services", "Validacao-TOTP-2FA.Services\Validacao-TOTP-2FA.Services.csproj", "{6CA258BF-3D1C-4164-B869-266F7FA2CB8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validacao-TOTP-2FA.API", "Validacao-TOTP-2FA.API\Validacao-TOTP-2FA.API.csproj", "{DE953A43-FE0C-4350-B651-4E9453926DE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3512662C-D166-4116-B6C9-139CEB5D4244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3512662C-D166-4116-B6C9-139CEB5D4244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3512662C-D166-4116-B6C9-139CEB5D4244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3512662C-D166-4116-B6C9-139CEB5D4244}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E15B5DB-CF29-43A2-B4C3-DF60DEEA64AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E15B5DB-CF29-43A2-B4C3-DF60DEEA64AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E15B5DB-CF29-43A2-B4C3-DF60DEEA64AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E15B5DB-CF29-43A2-B4C3-DF60DEEA64AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3AC532D-1A92-4235-A176-63C2FF278583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AC532D-1A92-4235-A176-63C2FF278583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AC532D-1A92-4235-A176-63C2FF278583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AC532D-1A92-4235-A176-63C2FF278583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CA258BF-3D1C-4164-B869-266F7FA2CB8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA258BF-3D1C-4164-B869-266F7FA2CB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA258BF-3D1C-4164-B869-266F7FA2CB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA258BF-3D1C-4164-B869-266F7FA2CB8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE953A43-FE0C-4350-B651-4E9453926DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE953A43-FE0C-4350-B651-4E9453926DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE953A43-FE0C-4350-B651-4E9453926DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE953A43-FE0C-4350-B651-4E9453926DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCA4281D-C664-4D53-8950-689572E5BA82}
+	EndGlobalSection
+EndGlobal
