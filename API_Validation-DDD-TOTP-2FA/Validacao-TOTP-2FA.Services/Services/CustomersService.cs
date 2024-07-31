@@ -65,7 +65,7 @@ namespace Validacao_TOTP_2FA.Services.Services
             return _mapper.Map<CustomersDTO>(customers);
         }
 
-        public async Task<List<CustomersDTO>> Get()
+        public async Task<List<CustomersDTO>> GetAllAsync()
         {
             var allCustomers = await _customersRepository.GetAllAsync();
 

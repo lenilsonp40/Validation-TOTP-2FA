@@ -8,7 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Validacao-TOTP-2FA.Core\Validacao-TOTP-2FA.Core.csproj" />
+    <ProjectReference Include="..\Validacao-TOTP-2FA.Domain\Validacao-TOTP-2FA.Domain.csproj" />
+    <ProjectReference Include="..\Validacao-TOTP-2FA.Infra\Validacao-TOTP-2FA.Infra.csproj" />
+    <ProjectReference Include="..\Validacao-TOTP-2FA.Services\Validacao-TOTP-2FA.Services.csproj" />
   </ItemGroup>
 
 </Project>

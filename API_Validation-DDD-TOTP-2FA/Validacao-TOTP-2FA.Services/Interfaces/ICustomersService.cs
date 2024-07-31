@@ -13,7 +13,7 @@ namespace Validacao_TOTP_2FA.Services.Interfaces
         Task<CustomersDTO> Update(CustomersDTO customersDTO);
         Task Remove(long Id);
         Task<CustomersDTO> Get(long Id);
-        Task<List<CustomersDTO>> Get();
+        Task<List<CustomersDTO>> GetAllAsync();
         Task<List<CustomersDTO>> SearchByName(string name);
         Task<List<CustomersDTO>> SearchByEmail(string email);
         Task<CustomersDTO> GetByEmail(string email);
