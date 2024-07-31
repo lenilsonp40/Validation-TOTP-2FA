@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Validacao_TOTP_2FA.Core.Exceptions;
+using Validacao_TOTP_2FA.Domain.Validators;
 
 namespace Validacao_TOTP_2FA.Domain.Entities
 {
@@ -50,7 +52,7 @@ namespace Validacao_TOTP_2FA.Domain.Entities
 
         public override bool Validate()
         {
-            var validator = new UserValidator();
+            var validator = new CustomersValidators();
             var validation = validator.Validate(this);
 
             _errors.Clear(); // Limpa os erros anteriores antes de validar novamente
@@ -65,7 +67,7 @@ namespace Validacao_TOTP_2FA.Domain.Entities
                 // Lançar exceção apenas se houver erros
                 if (_errors.Count > 0)
                 {
-                    throw new Exception("Alguns campos estão inválidos, por favor corrija-os! " + string.Join(", ", _errors));
+                    throw new DomainException("Alguns campos estão inválidos, por favor corrija-os! " + string.Join(", ", _errors));
                 }
             }
 

@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Validacao-TOTP-2FA.Core\Validacao-TOTP-2FA.Core.csproj" />
+    <ProjectReference Include="..\Validacao-TOTP-2FA.Domain\Validacao-TOTP-2FA.Domain.csproj" />
+    <ProjectReference Include="..\Validacao-TOTP-2FA.Infra\Validacao-TOTP-2FA.Infra.csproj" />
+  </ItemGroup>
+
 </Project>
