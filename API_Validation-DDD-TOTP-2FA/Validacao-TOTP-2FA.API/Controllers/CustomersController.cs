@@ -9,7 +9,7 @@ using Validacao_TOTP_2FA.Services.Interfaces;
 
 namespace Validacao_TOTP_2FA.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class CustomersController : ControllerBase
     {
