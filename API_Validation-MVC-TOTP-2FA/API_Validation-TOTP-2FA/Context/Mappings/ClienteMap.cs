@@ -10,9 +10,9 @@ namespace API_Validation_TOTP_2FA.Context.Mappings
         {
             builder.ToTable("Validation_TB001_Clientes");
 
-            builder.HasKey(x => x.ClienteID);
+            builder.HasKey(x => x.ClienteId);
 
-            builder.HasIndex(x => x.ClienteID).IsUnique();
+            builder.HasIndex(x => x.ClienteId).IsUnique();
 
             builder.Property(x => x.Nome)
                     .IsRequired()
@@ -23,6 +23,17 @@ namespace API_Validation_TOTP_2FA.Context.Mappings
                     .IsRequired()
                     .HasColumnName("Email")
                     .HasColumnType("varchar(50)");
+
+            builder.Property(x => x.Password)
+               .IsRequired()
+               .HasMaxLength(30)
+               .HasColumnName("password")
+               .HasColumnType("VARCHAR(30)");
+
+            builder.Property(x => x.DataCadastro)
+                    .IsRequired()
+                    .HasColumnName("DataCadastro")
+                    .HasColumnType("datetime");
         }
     }
 }

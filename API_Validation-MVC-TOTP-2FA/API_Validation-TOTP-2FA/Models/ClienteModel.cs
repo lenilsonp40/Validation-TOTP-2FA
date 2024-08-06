@@ -7,8 +7,10 @@ namespace API_Validation_TOTP_2FA.Models
     public class ClienteModel
     {
         [Key]
-        public int ClienteID { get; set; }
-        public string Nome { get; set; }        
-        public string Email { get; set; }
+        public long ClienteId { get; set; }
+        public string? Nome { get; set; }        
+        public string? Email { get; set; }
+        public string? Password { get; set; }
+        public DateTime DataCadastro { get; set; }
     }
 }
